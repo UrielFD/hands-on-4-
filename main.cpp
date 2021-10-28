@@ -6,7 +6,7 @@
 #include <math.h>
 using namespace std;
 
-//Funciones que seran llamadas z
+//Funciones que seran llamadas 
 
 //Suma 2D
 void Sum_2D (char x1, char x2, char y1, char y2){
@@ -66,8 +66,8 @@ int O = atoi(argv[1]);
      x2 = atoi(argv[8]);
      y2 = atoi(argv[10]);
      cout << "Suma 2D" << endl;
-     cout << "Operacion: " << "("<< x1 << "," << y1 << ")+("<< x2 << "," << y2 << ")"<< endl;//operacion de muestra (no resuelto)
-     Sum_2D(atoi(argv[3]), atoi(argv[8]),  atoi(argv[5]) , atoi(argv[10]));//Resultado
+     cout << "Operacion: " << "("<< x1 << "," << y1 << ")+("<< x2 << "," << y2 << ")"<< endl;
+     Sum_2D(atoi(argv[3]), atoi(argv[8]),  atoi(argv[5]) , atoi(argv[10]));
     }
     
    //opcion 2 resta de vectores 2D
@@ -78,20 +78,20 @@ int O = atoi(argv[1]);
        x2 = atoi(argv[8]);
        y2 = atoi(argv[10]);
        cout << "Resta 2D" << endl;
-       cout << "Operacion: " << "("<< x1 << "," << y1 << ")-("<< x2 << "," << y2 << ")"<< endl;//operacion de muestra (no resuelto)
-       R_2D(atoi(argv[3]), atoi(argv[5]),  atoi(argv[8]) , atoi(argv[10]));//Resultado
+       cout << "Operacion: " << "("<< x1 << "," << y1 << ")-("<< x2 << "," << y2 << ")"<< endl;
+       R_2D(atoi(argv[3]), atoi(argv[5]),  atoi(argv[8]) , atoi(argv[10]));
       }
    
     //opcion 3 multiplicacion de vectores 2D
     if(O==3){
 	    float x, y;
-      float esc;//Escalar
+      float esc;
  	     x = atoi(argv[3]);
 	     y = atoi(argv[5]);
 	     esc = atoi(argv[8]);
 	     cout << "Multiplicación de vectores 2D" << endl;
-	     cout << "Operacion: " << "("<< esc << ")*("<< x << "," << y << ")"<< endl;//operacion de muestra (no resuelto)
-	     M_2D(atoi(argv[3]), atoi(argv[5]), atoi(argv[8]));//Resultado
+	     cout << "Operacion: " << "("<< esc << ")*("<< x << "," << y << ")"<< endl;
+	     M_2D(atoi(argv[3]), atoi(argv[5]), atoi(argv[8]));
 	}
 	
     //opcion 4 modulo 2D
@@ -100,8 +100,8 @@ int O = atoi(argv[1]);
 	   x = atoi(argv[3]);
 	   y = atoi(argv[5]);
 	   cout << "Modulo 2D " << endl;
-	   cout << "Operacion: " << "v" << x <<"² + " << y << "²"<< endl;//operacion de muestra (no resuelto)
-	   Modl_2D(atoi(argv[3]), atoi(argv[5]));//Resultado
+	   cout << "Operacion: " << "v" << x <<"² + " << y << "²"<< endl;
+	   Modl_2D(atoi(argv[3]), atoi(argv[5]));
 	  }
     
     //opcion 5 suma de vectores 3D
@@ -115,7 +115,7 @@ int O = atoi(argv[1]);
       x3 = atoi(argv[13]);
       y3 = atoi(argv[15]);
       cout << "Suma vectores 3D" << endl;
-      cout << "Operacion: " << "("<< x1 << "," << y1 << ")+("<< x2 << "," << y2 <<  ")+("<< x3 << "," << y3 << ")"<< endl;//operacion de muestra (no resuelto)
+      cout << "Operacion: " << "("<< x1 << "," << y1 << ")+("<< x2 << "," << y2 <<  ")+("<< x3 << "," << y3 << ")"<< endl; 
       Sum_3D(atoi(argv[3]), atoi(argv[5]), atoi(argv[8]), atoi(argv[10]), atoi(argv[13]), atoi(argv[15]));//Resultad
    	}
     
@@ -128,8 +128,8 @@ int O = atoi(argv[1]);
 	    y = atoi(argv[5]);
 	    z = atoi(argv[7]);
 	    cout << "Modulo 3D" << endl;
-	    cout << "Operacion: " << "v" << x <<"² + " << y << "² + " << z << "²"<< endl;//operacion de muestra (no resuelto)
-	    Modl_3D(atoi(argv[3]), atoi(argv[5]), atoi(argv[7]));//Resultad
+	    cout << "Operacion: " << "v" << x <<"² + " << y << "² + " << z << "²"<< endl;
+	    Modl_3D(atoi(argv[3]), atoi(argv[5]), atoi(argv[7]));
 	}
     //opcion 7 producto punto y cruz 3D
      if(O==7){      
@@ -141,16 +141,16 @@ int O = atoi(argv[1]);
         x2 = atoi(argv[10]);
         y2 = atoi(argv[12]);
         z2 = atoi(argv[14]);
-        cout << "Producto punto: " << "("<< x1 << "" << x2 << ")+(" << y1 <<  "" << y2 << ")+(" << z1 <<  "*" << z2 << ")"<< endl;//operacion de producto punto (no resuelto)
-        PRDC_punto(atoi(argv[3]), atoi(argv[5]), atoi(argv[7]), atoi(argv[10]), atoi(argv[12]), atoi(argv[14])); //Resultado del preducto punto
+        cout << "Producto punto: " << "("<< x1 << "" << x2 << ")+(" << y1 <<  "" << y2 << ")+(" << z1 <<  "*" << z2 << ")"<< endl;
+        PRDC_punto(atoi(argv[3]), atoi(argv[5]), atoi(argv[7]), atoi(argv[10]), atoi(argv[12]), atoi(argv[14])); //Resultado del producto punto
         cout << "---------------------------------- " << endl;
         cout << "Producto Cruz 3D " << endl;
         cout << "| i j k |" << endl;
         cout << "| "<< x1 << " " << y1 << " " << z1<< " |"<< endl;
         cout << "| "<< x2 << " " << y2 << " " << z2<< " |" << endl;
-        //operacion del preducto cruz 
+        //operacion del producto cruz 
         cout<<"Operacion: i(" << y1 << "(" << z2 << ")) - " << y2 << "(" << z1 << ")) - j(" << x1 << "(" << z2 << ") - " << x2 << "(" << z1 << ")) + k(" << x1 << "(" << y2 << ")- "<< x2 << "(" << y1 <<")" << endl;
-        PRDC_cruz(atoi(argv[3]), atoi(argv[5]), atoi(argv[7]), atoi(argv[10]), atoi(argv[12]), atoi(argv[14]));//resultado
+        PRDC_cruz(atoi(argv[3]), atoi(argv[5]), atoi(argv[7]), atoi(argv[10]), atoi(argv[12]), atoi(argv[14]));
 	}
     
    
