@@ -142,12 +142,10 @@ int O = atoi(argv[1]);
         y2 = atoi(argv[12]);
         z2 = atoi(argv[14]);
         cout << "Producto punto: " << "("<< x1 << "" << x2 << ")+(" << y1 <<  "" << y2 << ")+(" << z1 <<  "*" << z2 << ")"<< endl;
-        PRDC_punto(atoi(argv[3]), atoi(argv[5]), atoi(argv[7]), atoi(argv[10]), atoi(argv[12]), atoi(argv[14])); //Resultado del producto punto
-        cout << "---------------------------------- " << endl;
+        PRDC_punto(atoi(argv[3]), atoi(argv[5]), atoi(argv[7]), atoi(argv[10]), atoi(argv[12]), atoi(argv[14])); 
+        
         cout << "Producto Cruz 3D " << endl;
-        cout << "| i j k |" << endl;
-        cout << "| "<< x1 << " " << y1 << " " << z1<< " |"<< endl;
-        cout << "| "<< x2 << " " << y2 << " " << z2<< " |" << endl;
+       
         //operacion del producto cruz 
         cout<<"Operacion: i(" << y1 << "(" << z2 << ")) - " << y2 << "(" << z1 << ")) - j(" << x1 << "(" << z2 << ") - " << x2 << "(" << z1 << ")) + k(" << x1 << "(" << y2 << ")- "<< x2 << "(" << y1 <<")" << endl;
         PRDC_cruz(atoi(argv[3]), atoi(argv[5]), atoi(argv[7]), atoi(argv[10]), atoi(argv[12]), atoi(argv[14]));
